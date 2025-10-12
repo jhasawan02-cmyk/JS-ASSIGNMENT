@@ -30,3 +30,28 @@
 // else{console.log(`Result: ${result}`);}
 
 //Task3.
+// let array =[1,2,3,4,5,6];
+// let i = Math.floor(Math.random()*array.length);// random function only take value between 0 and 1
+// let j = Math.floor(Math.random()*array.length);
+// if( i !== j){
+//     [array[i],array[j]]=[array[j],array[i]];
+//     console.log(array);
+// }else{console.log(`OOPS! it Seem's i is equal to j`);}
+
+//Task4.PENDING
+
+//task5. doing callback on higherorder function(a function which return another function or get another function as it's argument)
+//PENDING
+
+//Task6.  Dom manupulation
+// let color_options = ["brown","red","pink","green","blue","yellow","orange","violet"] 
+// let button = document.querySelector("button");
+
+// button.addEventListener("click",function(){
+//     button.style.backgroundColor = color_options[Math.floor(Math.random()*color_options.length)]; 
+// })
+
+ 
+
+
+
