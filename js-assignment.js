@@ -85,7 +85,7 @@
 //     let amount = Number((prompt(`Enter the Price: `)).trim()); 
 //     let discount_rate =rate[Math.floor(Math.random()*rate.length)];
 //     let Net_amount = discount_rate>85?((amount*(discount_rate))/100):((amount*(100-discount_rate))/100);
-                     
+
 
 //     return {amount, discount_rate ,Net_amount};
 // }
@@ -102,8 +102,33 @@
 //     button.style.backgroundColor = color_options[Math.floor(Math.random()*color_options.length)]; 
 // })
 
+//Task7.(You do not need "" around keys of an object and seperate each object by comma)
+let people = [
+    { name: "Ramesh", age: 25, language_speaks: "hindi/urdu", city: "delhi", email: "ramesh@gmail.com" },
+    { name: "Suresh", age: 37, language_speaks: "hindi/english", city: "mumbai", email: "suresh@gmail.com" },
+    { name: "Ram", age: 28, language_speaks: "punjabi/tamil", city: "chennai", email: "ram@gmail.com" },
+    { name: "Rashmi", age: 19, language_speaks: "english/kannad", city: "banglore", email: "rashmi@gmail.com" }
+];
 
- 
+let moreThan25 = 0;
+let lessThan25 = 0;
+let equal25 = 0;
 
-
-
+for (let i = 0; i <= people.length - 1; i++) {
+    // if (people[i].age > people[i + 1].age) {
+    //     console.log(`the oldest in the group is ${people[i].age} years old`)
+    //     break;
+    // }
+    let condition =people[i].age ;
+    if(condition > 25){
+        moreThan25 ++;
+    }
+    else if(condition < 25){
+        lessThan25 ++;
+    }
+    else if(condition === 25){
+        equal25 ++;}
+}
+console.log(`there are ${moreThan25} people having age more than 25`);
+console.log(`there are ${lessThan25} having age less than 25`);
+console.log(`there are ${equal25} people of 25 years of age`);
