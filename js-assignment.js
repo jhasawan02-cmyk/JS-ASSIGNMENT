@@ -21,7 +21,7 @@
 // //     default: result ="invalid opeartor";
 // // }
 
-// // if(operator === "+"){result = number1 + number2}; 
+// // if(operator === "+"){result = number1 + number2};
 // // if(operator === "-"){result = number1 - number2};
 // // if(operator === "*"){result = number1 * number2};
 // // if(operator === "/"){result = number1 / number2};
@@ -41,7 +41,58 @@
 //Task4.PENDING
 
 //task5. doing callback on higherorder function(a function which return another function or get another function as it's argument)
-//PENDING
+// case1.another function thusse ga value in this function
+//      Ex.1
+// function SayHi (name,greetings){
+//     console.log(`${greetings} Mr. ${name}`);
+// }
+// function greetings(){
+//     let greet = ["vannakkam", "Hello", "How are you?","Namaste","keem chhoo"];
+//     return greet ;
+// }
+
+// SayHi("Ram",greetings()[2]);
+//     Ex.2
+// function showwheather(wheather){
+//     console.log(`Today is a ${wheather} day`);
+// }
+// function wheather(){
+//     let wh = ["cold","sunny","rainy","cloudy"];
+//     return wh;
+// }
+// showwheather(wheather()[1]);
+//    Ex.3
+// function introducePerson(adject){
+//     console.log(`This person is really ${adject}`);
+// }
+// function adject(){
+//     let adject_arr = ["Liakeable","Strong","Brave","Honest","Humble","Confident","Mature","Funny","Smart"];
+//     let random_section = Math.floor(Math.random()*adject_arr.length);
+//     let return_karne_keliye = adject_arr[random_section];
+//     return return_karne_keliye;
+// }
+// introducePerson(adject());
+//   Ex.4
+// function Bill(amount,discount_rate,Net_amount){
+//     console.log(`Amount:${amount}`);
+//     console.log(`Discount:${discount_rate} %`);
+//     console.log(`Net Payable:${Net_amount}`);
+// }
+
+// function calculation(){
+//     let rate =[10,5,90,30,50,60,95,20,80,75,70,85];//for internal use only
+
+//     let amount = Number((prompt(`Enter the Price: `)).trim()); 
+//     let discount_rate =rate[Math.floor(Math.random()*rate.length)];
+//     let Net_amount = discount_rate>85?((amount*(discount_rate))/100):((amount*(100-discount_rate))/100);
+                     
+
+//     return {amount, discount_rate ,Net_amount};
+// }
+// let result = calculation();
+
+// Bill(result.amount,result.discount_rate,result.Net_amount);
+//   Ex.5
 
 //Task6.  Dom manupulation
 // let color_options = ["brown","red","pink","green","blue","yellow","orange","violet"] 
@@ -50,6 +101,7 @@
 // button.addEventListener("click",function(){
 //     button.style.backgroundColor = color_options[Math.floor(Math.random()*color_options.length)]; 
 // })
+
 
  
 
